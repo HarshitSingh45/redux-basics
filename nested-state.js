@@ -28,7 +28,7 @@ const reducer = (state = initialState, action) => {
     //         street: action.payload
     //       }
     //     }
-      return produce(state, draft => {
+      return produce(state, (draft) => {
         draft.address.street = action.payload
       })
     default: {
